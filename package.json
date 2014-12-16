@@ -1,0 +1,20 @@
+{
+  "name": "t11e-utils",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^2.3.11",
+    "debug": "^2.1.0",
+    "events": "^1.0.2",
+    "http-browserify": "git+https://github.com/bjoerge/http-browserify.git#e0ca5fdf346c4d851276c1672e6e60681b28da02",
+    "underscore": "~1.7.0"
+  },
+  "devDependencies": {
+  },
+  "browser": {
+    "http": "http-browserify"
+  }
+}
