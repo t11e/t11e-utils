@@ -12,9 +12,11 @@
     "dom-event": "0.0.4",
     "events": "^1.0.2",
     "http-browserify": "git+https://github.com/bjoerge/http-browserify.git#e0ca5fdf346c4d851276c1672e6e60681b28da02",
-    "lz-string": "~1.3.3",
-    "react": "~0.12.1",
     "jquery": "^1.11.1-beta1",
+    "lz-string": "~1.3.3",
+    "moment": "^2.10.3",
+    "moment-range": "^1.0.9",
+    "react": "~0.12.1",
     "underscore": "~1.7.0"
   },
   "devDependencies": {
