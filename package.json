@@ -26,5 +26,10 @@
   },
   "browser": {
     "http": "http-browserify"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
   }
 }
