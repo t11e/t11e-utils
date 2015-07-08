@@ -64,21 +64,21 @@ function describeTimeRange(range) {
   } else if (+range === 60 * 60 * 1000) {
     var now = moment();
     if (range.start.isSame(now, 'year')) {
-      return range.start.format('MMM D hh:mm');
+      return range.center().format('MMM D hh:mm');
     } else {
-      return range.start.format('lll');
+      return range.center().format('lll');
     }
   } else if (isRangeWhole(range, 'day')) {
     var now = moment();
     if (range.start.isSame(now, 'year')) {
-      return range.start.format('MMM D');
+      return range.center().format('MMM D');
     } else {
-      return range.start.format('ll');
+      return range.center().format('ll');
     }
   } else if (isRangeWhole(range, 'year')) {
-    return range.start.format('YYYY');
+    return range.center().format('YYYY');
   } else if (isRangeWhole(range, 'month')) {
-    return range.start.format('MMMM, YYYY');
+    return range.center().format('MMMM, YYYY');
   } else {
     var dates = [range.start, moment(range.end).subtract(1, 'second')];
     var format;
